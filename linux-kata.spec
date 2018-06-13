@@ -30,7 +30,7 @@ BuildRequires:  bison
 %define debug_package %{nil}
 %define __strip /bin/true
 
-Patch0001: 0001-HACK-9P-always-use-cached-inode-to-fill-in-v9fs_vfs_.patch
+Patch0001: 0001-NO-UPSTREAM-9P-always-use-cached-inode-to-fill-in-v9.patch
 
 
 %description
