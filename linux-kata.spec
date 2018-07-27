@@ -37,7 +37,7 @@ Patch0001: 0001-NO-UPSTREAM-9P-always-use-cached-inode-to-fill-in-v9.patch
 The Linux kernel.
 
 %prep
-%setup -q -n linux-4.14.22
+%setup -q -n linux-%{version}
 
 %patch0001 -p1
 
