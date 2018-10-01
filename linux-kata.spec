@@ -6,7 +6,7 @@
 
 Name:           linux-kata
 Version:        4.14.67
-Release:        5
+Release:        6
 License:        GPL-2.0
 Summary:        The Linux kernel optimized for running inside a container
 Url:            http://www.kernel.org/
