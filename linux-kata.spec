@@ -5,13 +5,13 @@
 #
 
 Name:           linux-kata
-Version:        4.14.106
-Release:        14
+Version:        4.14.107
+Release:        15
 License:        GPL-2.0
 Summary:        The Linux kernel optimized for running inside a container
 Url:            http://www.kernel.org/
 Group:          kernel
-Source0:        https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.14.106.tar.xz
+Source0:        https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.14.107.tar.xz
 Source1:        config
 
 %define kversion %{version}-%{release}.container
