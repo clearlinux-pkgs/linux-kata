@@ -24,6 +24,7 @@ BuildRequires:  buildreq-kernel
 %define __strip /bin/true
 
 Patch0001: 0001-NO-UPSTREAM-9P-always-use-cached-inode-to-fill-in-v9.patch
+Patch0002: CVE-2019-9857.patch
 
 %description
 The Linux kernel.
@@ -32,6 +33,7 @@ The Linux kernel.
 %setup -q -n linux-%{version}
 
 %patch0001 -p1
+%patch0002 -p1
 
 cp %{SOURCE1} .
 
