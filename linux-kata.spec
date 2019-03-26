@@ -5,25 +5,18 @@
 #
 
 Name:           linux-kata
-Version:        4.14.108
-Release:        19
+Version:        4.19.31
+Release:        20
 License:        GPL-2.0
 Summary:        The Linux kernel optimized for running inside a container
 Url:            http://www.kernel.org/
 Group:          kernel
-Source0:        https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.14.108.tar.xz
+Source0:        https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.19.31.tar.xz
 Source1:        config
 
 %define kversion %{version}-%{release}.container
 
-BuildRequires:  bash >= 2.03
-BuildRequires:  bc
-BuildRequires:  binutils-dev
-BuildRequires:  elfutils-dev
-BuildRequires:  make >= 3.78
-BuildRequires:  openssl-dev
-BuildRequires:  flex
-BuildRequires:  bison
+BuildRequires:  buildreq-kernel
 
 # don't strip .ko files!
 %global __os_install_post %{nil}
