@@ -6,7 +6,7 @@
 
 Name:           linux-kata
 Version:        4.19.36
-Release:        28
+Release:        29
 License:        GPL-2.0
 Summary:        The Linux kernel optimized for running inside a container
 Url:            http://www.kernel.org/
@@ -25,7 +25,6 @@ BuildRequires:  buildreq-kernel
 
 Patch0001: 0001-NO-UPSTREAM-9P-always-use-cached-inode-to-fill-in-v9.patch
 Patch0002: 0002-Add-boot-option-to-allow-unsigned-modules.patch
-Patch0003: CVE-2019-9857.patch
 
 %description
 The Linux kernel.
@@ -35,7 +34,6 @@ The Linux kernel.
 
 %patch0001 -p1
 %patch0002 -p1
-%patch0003 -p1
 
 cp %{SOURCE1} .
 
