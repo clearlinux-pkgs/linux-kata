@@ -1,13 +1,13 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86 4.19.31 Kernel Configuration
+# Linux/x86 4.19.41 Kernel Configuration
 #
 
 #
-# Compiler: gcc (Clear Linux OS for Intel Architecture) 8.3.1 20190326 gcc-8-branch@269930
+# Compiler: gcc (Clear Linux OS for Intel Architecture) 9.1.1 20190508 gcc-9-branch@270996
 #
 CONFIG_CC_IS_GCC=y
-CONFIG_GCC_VERSION=80301
+CONFIG_GCC_VERSION=90101
 CONFIG_CLANG_VERSION=0
 CONFIG_IRQ_WORK=y
 CONFIG_BUILDTIME_EXTABLE_SORT=y
@@ -625,7 +625,8 @@ CONFIG_HAVE_ARCH_SECCOMP_FILTER=y
 CONFIG_SECCOMP_FILTER=y
 CONFIG_HAVE_STACKPROTECTOR=y
 CONFIG_CC_HAS_STACKPROTECTOR_NONE=y
-# CONFIG_STACKPROTECTOR is not set
+CONFIG_STACKPROTECTOR=y
+# CONFIG_STACKPROTECTOR_STRONG is not set
 CONFIG_HAVE_ARCH_WITHIN_STACK_FRAMES=y
 CONFIG_HAVE_CONTEXT_TRACKING=y
 CONFIG_HAVE_VIRT_CPU_ACCOUNTING_GEN=y
@@ -1582,6 +1583,7 @@ CONFIG_NET_CORE=y
 # CONFIG_MACVLAN is not set
 # CONFIG_IPVLAN is not set
 # CONFIG_VXLAN is not set
+# CONFIG_GTP is not set
 # CONFIG_MACSEC is not set
 # CONFIG_NETCONSOLE is not set
 CONFIG_TUN=y
@@ -1796,6 +1798,7 @@ CONFIG_UNIX98_PTYS=y
 # CONFIG_NOZOMI is not set
 # CONFIG_N_GSM is not set
 # CONFIG_TRACE_SINK is not set
+CONFIG_LDISC_AUTOLOAD=y
 # CONFIG_DEVMEM is not set
 # CONFIG_DEVKMEM is not set
 
@@ -1845,7 +1848,6 @@ CONFIG_HW_RANDOM_INTEL=y
 # CONFIG_HW_RANDOM_VIA is not set
 CONFIG_HW_RANDOM_VIRTIO=y
 # CONFIG_NVRAM is not set
-# CONFIG_R3964 is not set
 # CONFIG_APPLICOM is not set
 # CONFIG_MWAVE is not set
 # CONFIG_RAW_DRIVER is not set
@@ -3196,5 +3198,5 @@ CONFIG_UNWINDER_ORC=y
 
 
 # kernel-config sources:
-# FILEVER=/usr/share/kernel-config/base-4.19-3-22
-# FILEVER=/usr/share/kernel-config/mandatory-4.19-3-22
+# FILEVER=/usr/share/kernel-config/base-4.19-4-26
+# FILEVER=/usr/share/kernel-config/mandatory-4.19-4-26
