@@ -23,8 +23,18 @@ BuildRequires:  buildreq-kernel
 %define debug_package %{nil}
 %define __strip /bin/true
 
-Patch0001: 0001-NO-UPSTREAM-9P-always-use-cached-inode-to-fill-in-v9.patch
-Patch0002: 0002-Add-boot-option-to-allow-unsigned-modules.patch
+#cve.start cve patches from 0001 to 009
+Patch0001: CVE-2019-9500.patch
+Patch0002: CVE-2019-9503.patch
+#cve.end
+
+#mainline: Mainline patches, upstream backport and fixes from 0010 to 0099
+#mainline.end
+
+#Serie.clr 01XX: Clear Linux  and Kata-Contaienrs patches
+Patch0101: 0101-NO-UPSTREAM-9P-always-use-cached-inode-to-fill-in-v9.patch
+Patch0102: 0102-Add-boot-option-to-allow-unsigned-modules.patch
+#Serie.end
 
 %description
 The Linux kernel.
@@ -32,8 +42,18 @@ The Linux kernel.
 %prep
 %setup -q -n linux-%{version}
 
+#cve.patch.start cve patches
 %patch0001 -p1
 %patch0002 -p1
+#cve.patch.end
+
+#mainline.patch.start Mainline patches, upstream backport and fixes
+#mainline.patch.end
+
+#Serie.patch.start Clear Linux patches
+%patch0101 -p1
+%patch0102 -p1
+#Serie.patch.end
 
 cp %{SOURCE1} .
 
