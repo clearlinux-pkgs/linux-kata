@@ -14,25 +14,28 @@ Group:          kernel
 Source0:        https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.19.67.tar.xz
 Source1:        config
 
-%define kversion %{version}-%{release}.container
+%define ktarget  container
+%define kversion %{version}-%{release}.%{ktarget}
 
 BuildRequires:  buildreq-kernel
+
+Requires: linux-kata-license = %{version}-%{release}
 
 # don't strip .ko files!
 %global __os_install_post %{nil}
 %define debug_package %{nil}
 %define __strip /bin/true
 
-#cve.start cve patches from 0001 to 009
+#cve.start cve patches from 0001 to 050
 Patch0001: CVE-2019-12455.patch
 Patch0002: CVE-2019-12456.patch
 Patch0003: CVE-2019-12379.patch
 #cve.end
 
-#mainline: Mainline patches, upstream backport and fixes from 0010 to 0099
+#mainline: Mainline patches, upstream backport and fixes from 0051 to 0099
 #mainline.end
 
-#Serie.clr 01XX: Clear Linux  and Kata-Contaienrs patches
+#Serie.clr 01XX: Clear Linux patches
 Patch0101: 0101-NO-UPSTREAM-9P-always-use-cached-inode-to-fill-in-v9.patch
 Patch0102: 0102-Add-boot-option-to-allow-unsigned-modules.patch
 #Serie.end
@@ -40,8 +43,15 @@ Patch0102: 0102-Add-boot-option-to-allow-unsigned-modules.patch
 %description
 The Linux kernel.
 
+%package license
+Summary: license components for the linux package.
+Group: Default
+
+%description license
+license components for the linux package.
+
 %prep
-%setup -q -n linux-%{version}
+%setup -q -n linux-4.19.67
 
 #cve.patch.start cve patches
 %patch0001 -p1
@@ -107,9 +117,17 @@ InstallKernel arch/x86/boot/bzImage vmlinux
 
 rm -rf %{buildroot}/usr/lib/firmware
 
+mkdir -p %{buildroot}/usr/share/package-licenses/linux-kata
+cp COPYING %{buildroot}/usr/share/package-licenses/linux-kata/COPYING
+cp -a LICENSES/* %{buildroot}/usr/share/package-licenses/linux-kata
+
 %files
 %dir /usr/share/kata-containers
 /usr/share/kata-containers/vmlinux-%{kversion}
 /usr/share/kata-containers/vmlinux.container
 /usr/share/kata-containers/vmlinuz-%{kversion}
 /usr/share/kata-containers/vmlinuz.container
+
+%files license
+%defattr(0644,root,root,0755)
+/usr/share/package-licenses/linux-kata
