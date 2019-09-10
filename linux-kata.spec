@@ -5,13 +5,13 @@
 #
 
 Name:           linux-kata
-Version:        4.19.71
-Release:        69
+Version:        4.19.72
+Release:        70
 License:        GPL-2.0
 Summary:        The Linux kernel optimized for running inside a container
 Url:            http://www.kernel.org/
 Group:          kernel
-Source0:        https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.19.71.tar.xz
+Source0:        https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.19.72.tar.xz
 Source1:        config
 
 %define ktarget  container
@@ -51,7 +51,7 @@ Group: Default
 license components for the linux package.
 
 %prep
-%setup -q -n linux-4.19.71
+%setup -q -n linux-4.19.72
 
 #cve.patch.start cve patches
 %patch0001 -p1
