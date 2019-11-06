@@ -6,7 +6,7 @@
 
 Name:           linux-kata
 Version:        4.19.82
-Release:        80
+Release:        81
 License:        GPL-2.0
 Summary:        The Linux kernel optimized for running inside a container
 Url:            http://www.kernel.org/
@@ -38,6 +38,7 @@ Patch0003: CVE-2019-12379.patch
 #Serie.clr 01XX: Clear Linux patches
 Patch0101: 0101-NO-UPSTREAM-9P-always-use-cached-inode-to-fill-in-v9.patch
 Patch0102: 0102-Add-boot-option-to-allow-unsigned-modules.patch
+Patch0103: 0103-add-workaround-for-binutils-optimization.patch
 #Serie.end
 
 %description
@@ -65,6 +66,7 @@ license components for the linux package.
 #Serie.patch.start Clear Linux patches
 %patch0101 -p1
 %patch0102 -p1
+%patch0103 -p1
 #Serie.patch.end
 
 cp %{SOURCE1} .
