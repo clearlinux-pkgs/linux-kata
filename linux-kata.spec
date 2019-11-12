@@ -137,7 +137,7 @@ BuildKernel() {
     make -s mrproper
     cp config .config
 
-    make -s ARCH=$Arch oldconfig > /dev/null
+    make -s ARCH=$Arch olddefconfig > /dev/null
     make -s CONFIG_DEBUG_SECTION_MISMATCH=y %{?_smp_mflags} ARCH=$Arch %{?sparse_mflags} || exit 1
 }
 
