@@ -1,0 +1,2 @@
+Update kernel with each new kata release:
+(run update.sh with the version tag of the kata release)
