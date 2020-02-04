@@ -9,7 +9,7 @@ Subject: [PATCH] add workaround for binutils optimization
  2 files changed, 7 insertions(+), 4 deletions(-)
 
 diff --git a/arch/x86/Makefile b/arch/x86/Makefile
-index 65e5205..7cc0aad 100644
+index 4833dd7..1e511f5 100644
 --- a/arch/x86/Makefile
 +++ b/arch/x86/Makefile
 @@ -58,7 +58,7 @@ endif
