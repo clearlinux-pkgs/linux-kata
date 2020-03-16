@@ -1,13 +1,13 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86 4.19.109 Kernel Configuration
+# Linux/x86 4.19.110 Kernel Configuration
 #
 
 #
-# Compiler: gcc (Clear Linux OS for Intel Architecture) 9.2.1 20200306 gcc_9_2_0_release-740-g39bdebf372
+# Compiler: gcc (Clear Linux OS for Intel Architecture) 9.3.1 20200312 releases/gcc-9.3.0-9-gde8e3b71c8
 #
 CONFIG_CC_IS_GCC=y
-CONFIG_GCC_VERSION=90201
+CONFIG_GCC_VERSION=90301
 CONFIG_CLANG_VERSION=0
 CONFIG_CC_HAS_ASM_GOTO=y
 CONFIG_IRQ_WORK=y
