@@ -1,13 +1,13 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86 4.19.122 Kernel Configuration
+# Linux/x86 4.19.123 Kernel Configuration
 #
 
 #
-# Compiler: gcc (Clear Linux OS for Intel Architecture) 9.3.1 20200507 releases/gcc-9.3.0-217-g7790399265
+# Compiler: gcc (Clear Linux OS for Intel Architecture) 10.1.1 20200512 releases/gcc-10.1.0-31-g0d2cd7aaf3
 #
 CONFIG_CC_IS_GCC=y
-CONFIG_GCC_VERSION=90301
+CONFIG_GCC_VERSION=100101
 CONFIG_CLANG_VERSION=0
 CONFIG_CC_HAS_ASM_GOTO=y
 CONFIG_IRQ_WORK=y
@@ -758,9 +758,8 @@ CONFIG_HAVE_ARCH_PREL32_RELOCATIONS=y
 #
 # CONFIG_GCOV_KERNEL is not set
 CONFIG_ARCH_HAS_GCOV_PROFILE_ALL=y
-CONFIG_PLUGIN_HOSTCC="g++"
+CONFIG_PLUGIN_HOSTCC=""
 CONFIG_HAVE_GCC_PLUGINS=y
-# CONFIG_GCC_PLUGINS is not set
 CONFIG_RT_MUTEXES=y
 CONFIG_BASE_SMALL=0
 CONFIG_MODULES=y
