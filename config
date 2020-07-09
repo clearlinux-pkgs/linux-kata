@@ -1,10 +1,10 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86 4.19.131 Kernel Configuration
+# Linux/x86 4.19.132 Kernel Configuration
 #
 
 #
-# Compiler: gcc (Clear Linux OS for Intel Architecture) 10.1.1 20200629 releases/gcc-10.1.0-283-g687147abdf
+# Compiler: gcc (Clear Linux OS for Intel Architecture) 10.1.1 20200702 releases/gcc-10.1.0-308-g41b504e91e
 #
 CONFIG_CC_IS_GCC=y
 CONFIG_GCC_VERSION=100101
@@ -640,6 +640,7 @@ CONFIG_EFI_CAPSULE_LOADER=y
 # CONFIG_EFI_TEST is not set
 # CONFIG_APPLE_PROPERTIES is not set
 # CONFIG_RESET_ATTACK_MITIGATION is not set
+CONFIG_EFI_CUSTOM_SSDT_OVERLAYS=y
 
 #
 # Tegra firmware driver
