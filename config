@@ -1,10 +1,10 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86 4.19.147 Kernel Configuration
+# Linux/x86 4.19.148 Kernel Configuration
 #
 
 #
-# Compiler: gcc (Clear Linux OS for Intel Architecture) 10.2.1 20200915 releases/gcc-10.2.0-253-g49b3d88e9d
+# Compiler: gcc (Clear Linux OS for Intel Architecture) 10.2.1 20200924 releases/gcc-10.2.0-279-gaa47c98734
 #
 CONFIG_CC_IS_GCC=y
 CONFIG_GCC_VERSION=100201
@@ -4658,5 +4658,5 @@ CONFIG_UNWINDER_ORC=y
 
 
 # kernel-config sources:
-# FILEVER=/usr/share/kernel-config/base-4.19-4-44
-# FILEVER=/usr/share/kernel-config/mandatory-4.19-4-44
+# FILEVER=/usr/share/kernel-config/base-4.19-4-46
+# FILEVER=/usr/share/kernel-config/mandatory-4.19-4-46
