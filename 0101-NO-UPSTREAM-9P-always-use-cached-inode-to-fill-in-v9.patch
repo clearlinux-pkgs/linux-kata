@@ -17,7 +17,7 @@ Signed-off-by: Peng Tao <bergwolf@gmail.com>
  2 files changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/fs/9p/vfs_inode.c b/fs/9p/vfs_inode.c
-index 72b779b..3125641 100644
+index 72b779bc0942..3125641aaf04 100644
 --- a/fs/9p/vfs_inode.c
 +++ b/fs/9p/vfs_inode.c
 @@ -1080,7 +1080,7 @@ v9fs_vfs_getattr(const struct path *path, struct kstat *stat,
@@ -30,7 +30,7 @@ index 72b779b..3125641 100644
  		return 0;
  	}
 diff --git a/fs/9p/vfs_inode_dotl.c b/fs/9p/vfs_inode_dotl.c
-index a950a92..06f911b 100644
+index a950a927a626..06f911b23a51 100644
 --- a/fs/9p/vfs_inode_dotl.c
 +++ b/fs/9p/vfs_inode_dotl.c
 @@ -480,7 +480,7 @@ v9fs_vfs_getattr_dotl(const struct path *path, struct kstat *stat,
