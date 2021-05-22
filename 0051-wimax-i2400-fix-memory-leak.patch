@@ -13,7 +13,7 @@ Signed-off-by: David S. Miller <davem@davemloft.net>
  1 file changed, 1 insertion(+)
 
 diff --git a/drivers/net/wimax/i2400m/op-rfkill.c b/drivers/net/wimax/i2400m/op-rfkill.c
-index dc6fe93ce71f..da9874b4e198 100644
+index e8473047b2d1..fe6d16a1fd0f 100644
 --- a/drivers/net/wimax/i2400m/op-rfkill.c
 +++ b/drivers/net/wimax/i2400m/op-rfkill.c
 @@ -142,6 +142,7 @@ int i2400m_op_rfkill_sw_toggle(struct wimax_dev *wimax_dev,
