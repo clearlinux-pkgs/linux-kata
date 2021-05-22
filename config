@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86 4.19.190 Kernel Configuration
+# Linux/x86 4.19.191 Kernel Configuration
 #
 
 #
@@ -4657,5 +4657,5 @@ CONFIG_UNWINDER_ORC=y
 
 
 # kernel-config sources:
-# FILEVER=/usr/share/kernel-config/base-4.19-4-46
-# FILEVER=/usr/share/kernel-config/mandatory-4.19-4-46
+# FILEVER=/usr/share/kernel-config/base-4.19-5-49
+# FILEVER=/usr/share/kernel-config/mandatory-4.19-5-49
