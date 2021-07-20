@@ -1,10 +1,10 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86 4.19.197 Kernel Configuration
+# Linux/x86 4.19.198 Kernel Configuration
 #
 
 #
-# Compiler: gcc (Clear Linux OS for Intel Architecture) 11.1.1 20210630 releases/gcc-11.1.0-371-g7f954b851a
+# Compiler: gcc (Clear Linux OS for Intel Architecture) 11.1.1 20210714 releases/gcc-11.1.0-444-g5bde7650ca
 #
 CONFIG_CC_IS_GCC=y
 CONFIG_GCC_VERSION=110101
@@ -2754,6 +2754,7 @@ CONFIG_POWER_SUPPLY=y
 # CONFIG_CHARGER_BQ2415X is not set
 # CONFIG_CHARGER_SMB347 is not set
 # CONFIG_BATTERY_GAUGE_LTC2941 is not set
+# CONFIG_BATTERY_RT5033 is not set
 CONFIG_HWMON=y
 # CONFIG_HWMON_DEBUG_CHIP is not set
 
@@ -4657,5 +4658,5 @@ CONFIG_UNWINDER_ORC=y
 
 
 # kernel-config sources:
-# FILEVER=/usr/share/kernel-config/base-4.19-5-49
-# FILEVER=/usr/share/kernel-config/mandatory-4.19-5-49
+# FILEVER=/usr/share/kernel-config/base-4.19-5-51
+# FILEVER=/usr/share/kernel-config/mandatory-4.19-5-51
