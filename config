@@ -1,10 +1,10 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86 4.19.220 Kernel Configuration
+# Linux/x86 4.19.221 Kernel Configuration
 #
 
 #
-# Compiler: gcc (Clear Linux OS for Intel Architecture) 11.2.1 20211205 releases/gcc-11.2.0-558-g173232a0f6
+# Compiler: gcc (Clear Linux OS for Intel Architecture) 11.2.1 20211208 releases/gcc-11.2.0-562-gbd918acae2
 #
 CONFIG_CC_IS_GCC=y
 CONFIG_GCC_VERSION=110201
