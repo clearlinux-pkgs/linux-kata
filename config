@@ -1,10 +1,10 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86 4.19.221 Kernel Configuration
+# Linux/x86 4.19.222 Kernel Configuration
 #
 
 #
-# Compiler: gcc (Clear Linux OS for Intel Architecture) 11.2.1 20211208 releases/gcc-11.2.0-562-gbd918acae2
+# Compiler: gcc (Clear Linux OS for Intel Architecture) 11.2.1 20211220 releases/gcc-11.2.0-603-g5a511f2ac9
 #
 CONFIG_CC_IS_GCC=y
 CONFIG_GCC_VERSION=110201
@@ -753,6 +753,7 @@ CONFIG_STRICT_MODULE_RWX=y
 CONFIG_ARCH_HAS_REFCOUNT=y
 CONFIG_REFCOUNT_FULL=y
 CONFIG_HAVE_ARCH_PREL32_RELOCATIONS=y
+CONFIG_ARCH_USE_MEMREMAP_PROT=y
 
 #
 # GCOV-based kernel profiling
