@@ -1,10 +1,10 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86 4.19.240 Kernel Configuration
+# Linux/x86 4.19.241 Kernel Configuration
 #
 
 #
-# Compiler: gcc (Clear Linux OS for Intel Architecture) 12.0.1 20220423 (experimental) releases/gcc-11.3.0-39-g64c73a25c2
+# Compiler: gcc (Clear Linux OS for Intel Architecture) 12.0.1 20220504 (prerelease) releases/gcc-11.3.0-64-g043949882d
 #
 CONFIG_CC_IS_GCC=y
 CONFIG_GCC_VERSION=120001
@@ -2368,7 +2368,6 @@ CONFIG_USB_NET_RNDIS_WLAN=m
 # CONFIG_NETDEVSIM is not set
 CONFIG_NET_FAILOVER=y
 # CONFIG_ISDN is not set
-# CONFIG_NVM is not set
 
 #
 # Input device support
