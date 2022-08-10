@@ -1,17 +1,24 @@
 #!/bin/bash
 
-set -e
+set -euo pipefail
 
-if [ ! -d packaging ]; then
-   rm -f packaging
-   git clone https://github.com/kata-containers/packaging &> /dev/null
+PKG=linux-kata
+LTS_VER=4.19
+SPEC=./$PKG.spec
+
+CUR_VER=$(rpmspec --srpm -q --qf="%{VERSION}" $SPEC)
+CUR_VER=${CUR_VER//./\\.}
+
+rm -f releases.json
+curl -sSf -O -L https://www.kernel.org/releases.json
+NEW_VER=$(python3 ./filter-lts.py $LTS_VER releases.json)
+
+sed -i -e "s/$CUR_VER/$NEW_VER/g" $SPEC
+
+if ! git diff --quiet $SPEC; then
+	make generateupstream
+	make bumpnogit
+	git add $SPEC upstream release
+	git commit -m "Stable update to $NEW_VER" $SPEC upstream release
+	make koji-nowait
 fi
-
-pushd packaging
-git fetch -t &> /dev/null
-git checkout "$1" &> /dev/null
-cat kernel/configs/fragments/common/*.conf > ../config-fragment
-cat kernel/configs/fragments/x86_64/*.conf >> ../config-fragment
-popd
-
-make config
