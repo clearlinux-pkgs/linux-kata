@@ -20,3 +20,4 @@ rpms/
 for-review.txt
 
 linux-4.*
+/releases.json
